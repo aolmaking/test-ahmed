@@ -28,6 +28,7 @@ class Book {
         return false;
     }
 
+
     public function return_book(): void {
         $this->is_available = true;
     }
