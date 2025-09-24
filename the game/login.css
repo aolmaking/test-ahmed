@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url(./images/WhatsApp\ Image\ 2025-09-03\ at\ 23.53.52_dde76bf2.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;
+}
+#startBtn {
+    padding: 20px;
+    padding: 20px 30px;
+    font-size: 24px;
+    background-color: #f4fbf6;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#startBtn:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+#name {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 300px;
+    border-radius: 1.2em;
+}
+.greating {
+    font-size: 40px;
+    margin: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    white-space: nowrap;
+    display: inline-block; 
+    animation: typing 3s steps(19, end) forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 19ch }
+}
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+
+.greating-two {
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    white-space: nowrap;
+    display: inline-block; 
+    opacity: 0;
+    animation: fadeIn 0s linear 3s forwards, typing-two 3s steps(30, end) forwards 3s, blink-two 1s step-end infinite 3s;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes typing-two {
+    from { width: 0 }
+    to { width: 27ch }
+}
+@keyframes blink-two {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+/* .box {
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInBox 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+} */

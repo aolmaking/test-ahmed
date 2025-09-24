@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #000000, #000000);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image:url(./images/WhatsApp\ Image\ 2025-09-04\ at\ 03.33.37_37b665a6.jpg) ;
+}
+#nn {
+  position: relative;
+  display: inline;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  z-index: 1000;
+  margin-top: 15px;
+}
+
+#container {
+  text-align: center;
+  position: relative;
+}
+
+#welcomeMessage {
+    font-size: 40px;
+    margin: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    white-space: nowrap;
+    display: inline-block; 
+    animation: typing 3s steps(19, end) forwards, blink 1s step-end ;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 20ch }
+}
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+.password-input {
+  display: block;
+  margin: 20px auto;
+  padding: 12px;
+  font-size: 18px;
+  width: 250px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.password-input:disabled {
+  background-color: #eee;
+  border-radius: 1em;
+}
+
+#confirmBtn {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: top 0.4s ease, left 0.4s ease, transform 0.3s ease;
+}
+#confirmBtn:hover {
+  transform: scale(1.05);
+}
+
+.doneInput {
+  background-color: #28a745 !important;
+  color: #fff !important;
+  border-color: #28a745 !important;
+}
+
+.error {
+  border-color: red !important;
+  background-color: #ffe6e6;
+  animation: shake 0.3s;
+}
+
+/* أنيميشن الاهتزاز */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* زرار المساعدة */
+#helpBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #0999e6;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+#helpBtn:hover {
+  transform: scale(1.1);
+}
+
+/* النافذة (Modal) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 60%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  animation: fadeIn 0.4s;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #0066ff;
+}
+
+.closeBtn {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.closeBtn:hover {
+  color: red;
+}
+
+
+#winnerScreen {
+  display: none;
+  justify-content: center;  
+  align-items: center;       
+  width: 100vw;
+  background-color: green;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+#winnerScreen h1 {
+  font-size: 120px;          
+  color: white;
+  text-transform: uppercase;
+  animation: blinkWinner 1s infinite;
+}
+
+@keyframes blinkWinner {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+#felx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

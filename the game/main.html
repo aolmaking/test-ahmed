@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Game</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <main id="felx" >
+    <div id="nn" >
+    <h2 id="welcomeMessage"></h2>
+    </div>
+    <div id="container">
+    
+    <input type="text" class="password-input" placeholder="Enter password 1">
+    <input type="text" class="password-input" placeholder="Enter password 2" disabled>
+    <input type="text" class="password-input" placeholder="Enter password 3" disabled>
+    <input type="text" class="password-input" placeholder="Enter password 4" disabled>
+    <input type="text" class="password-input" placeholder="Enter password 5" disabled>
+    <input type="text" class="password-input" placeholder="Enter password 6" disabled>
+    <input type="text" class="password-input" placeholder="Enter password 7" disabled>
+    <input type="text" class="password-input" placeholder="Enter password 8" disabled>
+    <input type="text" class="password-input" placeholder="Enter password 9" disabled>
+    <input type="text" class="password-input" placeholder="Enter password 10" disabled>
+
+    
+    <button id="confirmBtn">Confirm</button>
+    <button id="helpBtn">❓</button>
+  </div>
+</main>
+  <div id="helpModal" class="modal">
+    <div class="modal-content">
+      <span class="closeBtn">&times;</span>
+      <h2>How to Play</h2>
+      <p>🔑 اكتب كلمة السر الصحيحة (من 1 لحد 9).<br>
+         ✅ لو صح → الخانة تقفل وتتحول أخضر.<br>
+         ⛔ لو غلط → الخانة تهتز وتتلون أحمر.<br>
+         ▶️ بعد كل كلمة سر صح، هتفتح الخانة اللي بعدها.<br>
+         🎉 كمل لحد الخانة العاشرة عشان تكسب!</p>
+    </div>
+    </div>
+<div id="winnerScreen">
+  <h1>WINNER</h1>
+</div>
+
+
+    <script src="main.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
